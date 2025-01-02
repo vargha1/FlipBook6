@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Almubdieuntech</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="text/javascript" src="./jquery.min.js"></script>
+  <script type="text/javascript" src="./jquery-ui.min.js"></script>
+  <script type="text/javascript" src="./turn.js"></script>
+</head>
+
+<body class="flex items-center h-[100svh] relative">
+  <p class="text-red-600 text-2xl absolute top-[calc(50%-265px)] right-5 md:top-5 md:right-[6rem] z-50">Pull from
+    Here!
+  </p>
+  <img src="images/arrow.png"
+    class="absolute top-[calc(50%-225px)] right-5 w-[32px] md:w-[64px] md:rotate-180 md:top-0 z-50 pointer-events-none invisible"
+    alt="arrow" id="arrow">
+  <div id="magazine" class="mx-5">
+    <div class="flex flex-col justify-center items-center relative">
+      <img src="images/1.png" class="w-fit h-[384px] md:h-full image" alt="" id="image1">
+    </div>
+    <div class="flex flex-col justify-center items-center relative">
+      <a href="https://chocolate-woad.vercel.app/" target="_blank"
+        class="absolute right-[12%] bottom-4 w-[55px] h-[90px]"></a>
+      <img src="images/2.png" class="w-fit h-[384px] md:h-full" alt="" id="image2">
+    </div>
+    <div class="flex flex-col justify-center items-center relative">
+      <a href="https://c5m11.vercel.app/" target="_blank"
+        class="absolute left-[16%] bottom-[35%] w-[65px] h-[80px]"></a>
+      <a href="https://c5m5.vercel.app/" target="_blank"
+        class="absolute right-[10%] bottom-[35%] w-[65px] h-[80px]"></a>
+      <a href="https://c5m14.vercel.app/" target="_blank"
+        class="absolute left-[16%] bottom-[10%] w-[65px] h-[80px]"></a>
+      <img src="images/3.png" class="w-fit h-[384px] md:h-full" alt="" id="image3">
+    </div>
+    <div class="flex flex-col justify-center items-center relative">
+      <a href="https://c5m6.vercel.app/" target="_blank" class="absolute left-[13%] top-[10%] w-[135px] h-[135px]"></a>
+      <a href="https://c5m10.vercel.app/" target="_blank"
+        class="absolute left-[13%] bottom-[28%] w-[65px] h-[80px]"></a>
+      <a href="https://c5m13.vercel.app/" target="_blank"
+        class="absolute right-[16%] bottom-[28%] w-[65px] h-[80px]"></a>
+      <img src="images/4.png" class="w-fit h-[384px] md:h-full" alt="" id="image4">
+    </div>
+    <div class="flex flex-col justify-center items-center relative">
+      <a href="https://c5m9.vercel.app/" target="_blank" class="absolute left-[12%] top-[15%] w-[85px] h-[135px]"></a>
+      <a href="https://c5m7.vercel.app/" target="_blank"
+        class="absolute right-[9%] bottom-[15%] w-[85px] h-[135px]"></a>
+      <img src="images/5.png" class="w-fit h-[384px] md:h-full" alt="" id="image5">
+    </div>
+    <div class="flex flex-col justify-center items-center relative">
+      <a href="https://c5m1.vercel.app/" target="_blank" class="absolute left-[12%] top-[12%] w-[65px] h-[80px]"></a>
+      <a href="https://c5m2.vercel.app/" target="_blank" class="absolute right-[14%] top-[12%] w-[65px] h-[80px]"></a>
+      <a href="https://c5m4.vercel.app/" target="_blank"
+        class="absolute right-[14%] bottom-[32%] w-[150px] h-[80px]"></a>
+      <a href="https://c5m8.vercel.app/" target="_blank"
+        class="absolute right-[14%] bottom-[8%] w-[150px] h-[80px]"></a>
+      <img src="images/6.png" class="w-fit h-[384px] md:h-full" alt="" id="image6">
+    </div>
+
+  </div>
+  <div class="flex flex-col justify-center items-center absolute inset-0 z-[50] bg-white" id="loading-screen">
+    <p id="loading-text">0%</p>
+    <progress id="loading-progress" value="0" max="100" class="h-2 w-4/5"></progress>
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
